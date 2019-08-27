@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tidyverse R demo</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Abdou Khouakhi &amp; Roel Tersteeg" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Tidyverse R demo
+## Brown bag
+### Abdou Khouakhi &amp; Roel Tersteeg
+### 05 April, 2018, Loughborough University, ABCE
+
+---
+
+
+
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# What is R?
+
+
+- Language + environment for data analysis, statistical computing and graphics 
+
+
+- Free and open source
+
+
+- Written by Ross Ahaka &amp; Robert Gentleman in 1996 and extended by others 
+
+
+- An implantation of S language written by John Chambers and others 
+
+
+- *“The Most powerful statistical computing language in the planet”* according to the Developer of SPSS.
+
+
+---
+class: center
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# Difference between R and Rstudio
+&lt;div class="figure"&gt;
+&lt;img src="img/r_studio.png" alt="R and Rstudio" width="450px" /&gt;
+&lt;p class="caption"&gt;R and Rstudio&lt;/p&gt;
+&lt;/div&gt;
+
+---
+class: center
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# Difference between R and Rstudio
+&lt;img src="img/5.png" width="450px" /&gt;
+
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+## What makes R different than other statistical software (SPSS, STATA, SAS, Excel...)?
+
+- **R** is free and open source! 
+
+- **R** comprises all of the capabilities of the above, and more
+
+- **R** is powerful in graphics 
+
+- **R** has a large community
+
+- **R** is good for developing algorithms
+
+- **R** is great for reproducible research
+
+- **R** can handle much larger datasets than Excel
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# Packages
+
+**https://cran.r-project.org/**
+
+  A collection of functions, data, and documentation that extends the capabilities of R
+
+![](img/pkg.png)
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+# Data types in R
+
+
+R works with numerous data types. Some of the most basic types are:
+
+ - Decimals values are called numerics.
+ 
+ - Natural numbers called integers. Integers are also numerics.
+ 
+ - Boolean values (TRUE or FALSE) are called logical.
+ 
+ - Text (or string) values are called characters.
+ 
+--
+
+R distinguishes between several types of objects: 
+.pull-left[
+* Vector
+
+* Matrix
+
+* Time series
+
+* Data frames
+]
+.pull-right[
+
+
+* Lists
+
+* Functions
+
+* Graphics...
+]
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# What can you do with R ? 
+
+- Programming
+
+- Analytics (data science and machine learning)
+
+- Graphics and visualizations (e.g. [ggplot](http://ggplot.yhathq.com/))
+
+- Build apps/interactive graphics (e.g. [shiny](https://shiny.rstudio.com/))
+
+- Reporting/dynamic documents (e.g [Rmarkdown](https://rmarkdown.rstudio.com/gallery.html)) 
+- R can interact with APIs 
+
+- Interface with other programming languages (e.g. [rpython](https://rpython.readthedocs.io/en/latest/))
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# To learn more..
+
+- There are entire books devoted to R (e.g. R cookbook, R for Everyone: Advanced Analytics and Graphics) 
+
+- Numerous (free) Web-based tutorials and user manuals (e.g. R for data science)
+
+- The best way to learn R is through trial-and-error
+
+- Embedded help, commands help() 
+
+Examples of online learning sites: 
+
+* **  https://www.rstudio.com/resources/training/**
+
+* **  https://www.datacamp.com/courses/free-introduction-to-r**
+
+* **  http://swirlstats.com/**
+
+* **  http://www.statmethods.net/**
+
+* **  https://stackoverflow.com/**
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# R demo 
+
+&lt;img src="img/chart.png" width="500px" /&gt;
+
+.small[*Data Science Pipeline Grolemund and Wickham*]
+
+--
+
+Data sets: Time series of tropical cyclones 
+
+- Import the data 
+- Check the data structure 
+- Summary statistics 
+- Data wrangling (select, filter, arrange…) 
+- Data visualization 
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# Data Wrangling
+[dplyr](http://dplyr.tidyverse.org/reference/bind.html) package functions/ verbs
+
+```yaml
+- mutate() : Add new columns (or overwrite old one)
+
+- filter() : subset rows 
+
+- select() : subset columns
+
+- arrange() : order rows 
+
+- summarise() : summarise rows 
+
+- group_by() : grouping elements used with summarise() 
+```
+
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# GGplot2
+- Concept of ‘Grammer of graphics’
+
+- Build-in statistics (e.g. for regression lines and histograms)
+
+- Variety of ways of building a graph
+
+- For quick graphs and yet highly adaptable
+
+--
+
+## Basic graph
+
+```yaml
+
+ggplot(data = , aes(x = , y = )) +
+		geom_point()
+
+p1 &lt;- ggplot(data = , aes(x = , y = ))
+		p1 + geom_point()
+
+ggplot() +
+		geom_point(data = , aes(x = , y = )) 
+
+```
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2000px-R_logo.svg.png)
+background-size: 100px
+background-position: 95% 8%
+
+# Adding layers
+
+```yaml
+ggplot() +
+		geom_point(data = , aes(x = , y = )) +
+```
+
+- Add layer with different data
+
+- Add theme objects, e.g. labels
+
+- Change the scale and scale type
+
+- Add/change legend
+
+- Change coordinate system
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
